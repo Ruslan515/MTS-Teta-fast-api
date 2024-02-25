@@ -8,7 +8,7 @@ from src.models.books import Book  # noqa F401
 
 from .settings import settings
 
-logger = logging.getLogger("__name__")
+logger = logging.getLogger("__name__")  # лог
 
 
 __all__ = ["global_init", "get_async_session", "create_db_and_tables", "delete_db_and_tables"]
