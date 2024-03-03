@@ -8,7 +8,7 @@ from src.routers import v1_router
 
 
 @asynccontextmanager
-async def lifespan(app: FastAPI):  # Рекомендуется теперь вместо @app.on_event()
+async def lifespan(app: FastAPI):  # Рекомендуется теперь вместо @app.on_event(). new
     # Запускается при старте приложения
     global_init()
     await create_db_and_tables()
